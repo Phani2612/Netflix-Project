@@ -48,6 +48,7 @@ function Action()
 
   return (
     <div>
+        <h1>Hello I changed</h1>
         <h2 style={{color: "white", fontSize: "20px", fontWeight: "900"}}>ACTION MOVIES</h2>
         { fetchedVideoID && <YouTube videoId={fetchedVideoID} opts={additionalData}/> }
         <div className='trendingdiv' style={{display: "flex", overflowX: "scroll"}}>
@@ -55,10 +56,12 @@ function Action()
             actionMovies.map(function(i)
             {
                 return (
+                     
                     <img style={{margin: "6px"}} onClick={function()
                     {
                         collectTheMovieName(i.title)
                     }} height="250px" width="250px" src={"https://image.tmdb.org/t/p/original"+i.poster_path} />
+
                 )
             })
         }
