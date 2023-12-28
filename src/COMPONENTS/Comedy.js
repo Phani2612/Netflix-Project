@@ -17,6 +17,7 @@ function Comedy()
 
   return (
     <div>
+        <h1 style={{color:"red"}}>I changed </h1>
         <h2 style={{color: "white", fontSize: "20px", fontWeight: "900"}}>COMEDY MOVIES</h2>
         <div className='trendingdiv' style={{display: "flex", overflowX: "scroll"}}>
         {
